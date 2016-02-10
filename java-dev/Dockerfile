@@ -2,7 +2,7 @@
 #
 
 # Pull base image.
-FROM mikescott/debian-desktop
+FROM mikeascott/debian-desktop
 MAINTAINER Mike Scott <mike.scott@sqs.com>
 
 RUN apt-get update && \
