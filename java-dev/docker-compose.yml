@@ -1,0 +1,15 @@
+dev_volumes:
+  image: debian
+  volumes:
+    - debian_home:/home
+    - $PWD/data:/data
+
+java_dev:
+  image: java-dev
+  volumes_from:
+    - dev_volumes
+  ports:
+    - "5901:5901"
+#  command: /bin/bash /root/start-xrdp.sh
+  links:
+    - dev_volumes
