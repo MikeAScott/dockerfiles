@@ -5,7 +5,7 @@ dev_volumes:
     - $PWD/data:/data
 
 java_dev:
-  image: java-dev
+  image: mikeascott/java-dev
   volumes_from:
     - dev_volumes
   ports:
